@@ -1,5 +1,7 @@
 # koa-sample
-Sample project for koa. Include routes, static file server, subdomain, and simple simple error handler.
+Sample project for [koa](https://github.com/koajs/koa). Include routes, static file server, subdomain, and simple error handler.
+
+[koa middleware list](https://github.com/koajs/koa/wiki#middleware)...
 
 ## Installation
 
@@ -9,7 +11,7 @@ $ cd koa-sample
 $ npm install
 $ npm start
 ```
-## Links
+## Tests
 Click to test.
 
 * http://localhost:3000
