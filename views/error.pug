@@ -1,0 +1,15 @@
+extends layout
+
+block styles
+  style
+    include error.css
+
+block content
+  #error
+    h1= status
+      p Looks like something broke!
+      if env == 'development'
+        h2 Message:
+        pre: code= error
+        h2 Stack:
+        pre: code= stack
