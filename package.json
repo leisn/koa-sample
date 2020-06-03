@@ -2,7 +2,7 @@
   "name": "koa-sample",
   "version": "1.0.0",
   "description": "Sample for koa.",
-  "main": "app.js",
+  "main": "program.js",
   "scripts": {
     "start": "SET DEBUG=this:* && node ./program.js",
     "lint": "eslint --fix ."
