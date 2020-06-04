@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div
+    h4 Upload single file
+    form(action="/upload", method="post",enctype="multipart/form-data")
+      input(type="file" name='file')
+      input(type="submit" value='Upload')
+  
+  div
+    h4 Upload multiple files
+    form(action="/upload", method="post", enctype="multipart/form-data")
+      input(type="file" name='file' multiple)
+      input(type="submit" value='Upload')
