@@ -12,6 +12,13 @@ var app = new koa();
 app.subdomainOffset = 1;
 
 app.use(logger());
+
+//Error handler
+app.use(error({
+    engine: 'pug',
+    template: path.join(__dirname, '/views/error.pug')
+}));
+
 app.use(body({ multipart: true }));
 
 //Static files
@@ -23,10 +30,5 @@ app.use(views(path.join(__dirname, '/views'), { extension: 'pug' }));
 //Register subdomain, routers inside
 vhost.Register(app);
 
-//Error handler
-app.use(error({
-    engine: 'pug',
-    template: path.join(__dirname, '/views/error.pug')
-}));
 
 module.exports = app;
