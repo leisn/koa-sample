@@ -17,3 +17,5 @@ Click to test.
 * http://localhost:3000
 * http://www.localhost:3000
 * http://user.localhost:3000
+* http://user.localhost:3000/login
+* http://user.localhost:3000/logout
